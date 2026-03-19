@@ -1,0 +1,17 @@
+numpy>=1.17.0
+pandas>=1.0.0
+matplotlib>=3.3.0
+seaborn>=0.11.0
+scikit-learn>=1.0.0
+qiskit==1.3.1
+qiskit-utils
+qiskit-machine-learning==0.8.2
+qiskit-aer==0.13.2
+qiskit-ibm-runtime==0.18.0
+qiskit[visualization]
+torch>=1.11.0,<2.0.0
+scipy>=1.5.0
+jupyter
+ipykernel
+nlopt>=2.7.0
+ucimlrepo
