@@ -1,0 +1,8 @@
+test_index,url_defanged,true_label,pred_logistic_regression_full,score_logistic_regression_full,pred_random_forest_full,score_random_forest_full,pred_logistic_regression_matched,score_logistic_regression_matched,pred_random_forest_matched,score_random_forest_matched,pred_svm_rbf_matched,score_svm_rbf_matched,pred_vqc_quantum_matched,score_vqc_quantum_matched,n_classical_models_wrong
+1051,hxxp://www[.]mjlmengineering[.]com,0,0,0.000146,0,0.0,1,0.572295,1,0.54,1,0.385528,1,0.530273,3
+1912,hxxp://www[.]herocamp[.]ru,0,0,1.3e-05,0,0.01,1,0.575795,1,0.86,1,0.48778,1,0.551758,3
+4848,hxxps://recouvrement-netflix[.]fr/,0,0,0.000106,0,0.0,1,0.570683,1,0.72,1,0.343536,1,0.524414,3
+10607,hxxp://communityrepairhelpbussinescenter[.]com/,0,0,0.0,0,0.0,1,0.56577,1,0.58,1,0.194661,1,0.538086,3
+15290,hxxp://acikdenizkredimv2[.]tk/,0,0,0.0,0,0.0,1,0.574147,1,0.87,1,0.399488,1,0.542969,3
+16684,hxxp://acikdenizkredim[.]tk/,0,0,0.0,0,0.0,1,0.576474,1,0.88,1,0.468999,1,0.557617,3
+20126,hxxps://www[.]coinbasetei[.]com/,0,0,0.006408,0,0.0,1,0.570069,1,0.51,1,0.306988,1,0.522461,3
