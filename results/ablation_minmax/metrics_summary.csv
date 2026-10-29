@@ -1,0 +1,7 @@
+model,scope,n_train,n_test,train_accuracy,test_accuracy,acc_ci_low,acc_ci_high,phish_precision,phish_recall,phish_f1,roc_auc,train_seconds
+Logistic Regression [full],full,188636,47159,0.999899,0.999873,0.999767,0.999958,1.0,0.999703,0.999851,1.0,0.224524
+Random Forest [full],full,188636,47159,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,6.279125
+Logistic Regression [matched],matched,800,1000,0.575,0.575,0.544975,0.605,1.0,0.007009,0.013921,0.999383,0.005766
+Random Forest [matched],matched,800,1000,1.0,0.987,0.979,0.993,0.985948,0.983645,0.984795,0.999328,0.154568
+SVM (RBF) [matched],matched,800,1000,0.92125,0.923,0.906,0.939,1.0,0.820093,0.901155,0.999522,0.018415
+VQC (quantum) [matched],matched,800,1000,0.58,0.573,0.542975,0.604,0.571429,0.009346,0.018391,0.557024,606.983027

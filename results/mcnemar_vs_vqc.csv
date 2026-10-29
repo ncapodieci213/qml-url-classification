@@ -1,6 +1,6 @@
 model,only_vqc_correct,only_model_correct,p_value,significant_at_0.05
-Logistic Regression [full],0,427,0.0,True
-Random Forest [full],0,427,0.0,True
-Logistic Regression [matched],3,5,0.726562,False
-Random Forest [matched],6,420,0.0,True
-SVM (RBF) [matched],0,350,0.0,True
+Logistic Regression [full],0,413,0.0,True
+Random Forest [full],0,413,0.0,True
+Logistic Regression [matched],6,410,0.0,True
+Random Forest [matched],6,406,0.0,True
+SVM (RBF) [matched],4,407,0.0,True

@@ -39,7 +39,7 @@ from sklearn.metrics import (
     roc_curve,
 )
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import MinMaxScaler, StandardScaler
+from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 from ucimlrepo import fetch_ucirepo
 
@@ -203,8 +203,10 @@ def prepare_quantum_inputs(data: Data) -> tuple[QuantumData, PCA]:
     print(f"\nPCA: {data.X_train.shape[1]} features -> {N_QUBITS} components "
           f"({explained:.1%} of variance kept)")
 
-    scaler = MinMaxScaler(feature_range=(0, 1)).fit(Z_train)
-    Z_train, Z_test = scaler.transform(Z_train), scaler.transform(Z_test)
+    lo, hi = np.percentile(Z_train, [1, 99], axis=0)  # fit on train only
+    span = np.maximum(hi - lo, 1e-12)
+    Z_train = np.clip((Z_train - lo) / span, 0, 1)
+    Z_test = np.clip((Z_test - lo) / span, 0, 1)
 
     tr = stratified_indices(data.y_train, QUANTUM_TRAIN_SIZE, RANDOM_SEED)
     te = stratified_indices(data.y_test, QUANTUM_TEST_SIZE, RANDOM_SEED)
